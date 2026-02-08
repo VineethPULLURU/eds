@@ -2,11 +2,13 @@
   background-color: #10405c;
   position: relative;
 }
+
 .blog-cards * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .blogs-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -15,6 +17,7 @@
   color: #fff;
   z-index: 9;
 }
+
 h2.blogs-title {
   font-size: 32px;
   font-style: italic;
@@ -76,6 +79,7 @@ h2.blogs-title {
   display: grid;
   place-items: center;
 }
+
 .sidebar-item:first-child {
   font-size: 50px;
   font-style: italic;

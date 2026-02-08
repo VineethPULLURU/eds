@@ -30,10 +30,10 @@ export default async function decorate(block) {
   const newsletterSection = sections[2].querySelector('.default-content-wrapper');
 
   const socialTitle = socialSection?.querySelector('h3')?.textContent || 'Social-default';
-  const socialLinks = Array.from(socialSection?.querySelectorAll('ul li') || []).map(li => li.outerHTML);
+  const socialLinks = Array.from(socialSection?.querySelectorAll('ul li') || []).map((li) => li.outerHTML);
 
   const linksTitle = linksSection?.querySelector('h3')?.textContent || 'Quick links';
-  const mainLinks = Array.from(linksSection?.querySelectorAll('ul li') || []).map(li => li.outerHTML);
+  const mainLinks = Array.from(linksSection?.querySelectorAll('ul li') || []).map((li) => li.outerHTML);
 
   const newsletterTitle = newsletterSection?.querySelector('h3')?.textContent || 'Newsletter';
   const newsletterText = newsletterSection?.querySelector('p:nth-of-type(1)')?.textContent?.trim() || '';
