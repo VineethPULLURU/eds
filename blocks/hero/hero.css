@@ -13,7 +13,6 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--background-color);
 }
 
 .hero picture {
@@ -33,5 +32,103 @@
 @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
+  }
+}
+
+.hero-banner {
+  background-color: rgb(0 0 0);
+  position: relative;
+  top: -1px;
+}
+
+.hero-banner > .container {
+  height: 570px; /* Adjustable height matching image proportions */
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  position: relative;
+}
+
+.hero-banner-content {
+  max-width: 500px;
+  z-index: 1;
+  position: relative;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 300;
+  color: rgb(77 166 255);
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 80%);
+  letter-spacing: 1px;
+}
+
+.hero-banner a {
+  color: rgb(77 166 255);
+}
+
+.hero-banner h1 + p {
+  font-size: 1.1rem;
+  color: rgb(255 255 255 / 90%);
+  text-shadow: 0 1px 2px rgb(0 0 0 / 80%);
+  margin-bottom: 0.5rem;
+  width: 50%;
+}
+
+.banner-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.banner-image img {
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 9;
+}
+
+.bottom-bar {
+  background: rgb(24 26 25);
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px 32px;
+}
+
+.bottom-bar > .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-bar > .container > p {
+  margin: 0;
+}
+
+.bottom-text-italic {
+  font-style: italic;
+}
+
+@media (width <= 768px) {
+  .hero-banner {
+    height: 300px;
+    padding: 0 30px;
+  }
+
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .bottom-bar {
+    padding: 15px 30px;
   }
 }
