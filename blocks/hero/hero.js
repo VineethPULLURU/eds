@@ -51,8 +51,8 @@ export default function decorate(block) {
   const bottomContainer = document.createElement('div');
   bottomContainer.className = 'container';
   bottomContainer.innerHTML = bottomTextHTML;
-  if(bottomTextHTML != '') {
-      bottomBar.append(bottomContainer);
+  if (bottomTextHTML !== '') {
+    bottomBar.append(bottomContainer);
   }
 
   block.innerHTML = '';
