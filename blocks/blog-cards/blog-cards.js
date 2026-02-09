@@ -26,7 +26,7 @@ export default function decorate(block) {
     const date = allPs[0]?.textContent?.trim() || '';
     const title = allPs[1]?.querySelector('strong')?.textContent?.trim() || allPs[1]?.textContent?.trim() || '';
     const desc = allPs[2]?.textContent?.trim() || '';     
-    let readMoreHTML = '<a href="#" class="read-more">Read more</a>';
+    let readMoreHTML = '';
     if (linkDiv) {
       const link = linkDiv.querySelector('a');
       if (link) {
