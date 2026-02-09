@@ -16,9 +16,6 @@ export default function decorate(block) {
   }); 
   if (validBlogRows.length === 0) return;
 
-  const blogTitle = document.createElement('h2');
-  blogTitle.className = 'blogs-title';
-  blogTitle.textContent = 'Featured Blogs';
   const container = document.createElement('div');
   container.className = 'blogs-container container';
   const blogsMain = document.createElement('div');
@@ -61,6 +58,5 @@ export default function decorate(block) {
   blogsSidebar.appendChild(sidebarImages);
   container.append(blogsMain, blogsSidebar);
   block.innerHTML = '';
-  block.append(blogTitle);
   block.append(container);
 }

@@ -18,11 +18,12 @@
   z-index: 9;
 }
 
-h2.blogs-title {
+#featured-blogs {
   font-size: 32px;
   font-style: italic;
   padding-top: 1.25rem;
   color: #fff;
+  margin: 0;
 }
 
 .blog-item {
@@ -54,11 +55,11 @@ h2.blogs-title {
 }
 
 .blog-item .read-more {
-  display: block;
   width: fit-content;
-  margin-left: auto;
   color: #339bdd;
   font-size: 16px;
+  display: flex !important;
+  margin-left: auto !important;
 }
 
 .sidebar-images img {

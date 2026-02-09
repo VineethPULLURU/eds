@@ -71,6 +71,7 @@ footer .footer p {
     border-radius: 8px;
     width: 60%;
     border: none;
+    padding: 0 15px;
 }
 
 .newsletter-btn {
